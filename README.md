@@ -6,7 +6,16 @@ Requirements
 ------------
 The main requirement is PHP >= 7.1. Other requirements you can see after download.
 
-Direcotry Structure
+Installation
+------------
+To use the skeleton, use Composer's `create-project` command:
+
+```bash
+$ composer create-project zenbox/easyii-skeleton <project dir>
+```
+
+Directory Structure
+-------------------
 ```
 config/             contains application configurations
 data/               contains files generated during runtime
