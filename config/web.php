@@ -29,7 +29,15 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' => getenv('APP_MAILER_FILE_TRANSPORT'),
+            'useFileTransport' => getenv('MAILER_TRANSPORT_USE_FILE'),
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => getenv('MAILER_TRANSPORT_HOST'),
+                'port' => getenv('MAILER_TRANSPORT_PORT'),
+                'username' => getenv('MAILER_TRANSPORT_USERNAME'),
+                'password' => getenv('MAILER_TRANSPORT_PASSWORD'),
+                'encryption' => getenv('MAILER_TRANSPORT_ENCRYPTION'),
+            ],
         ],
         'urlManager' => [
             'rules' => [

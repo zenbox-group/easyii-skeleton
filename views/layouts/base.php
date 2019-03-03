@@ -1,6 +1,9 @@
 <?php
+
+use yii\easyii\models\Setting;
 use yii\helpers\Html;
-$asset = \App\assets\AppAsset::register($this);
+
+$asset = \App\Assets\AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -19,6 +22,7 @@ $asset = \App\assets\AppAsset::register($this);
         <?php $this->beginBody() ?>
         <?= $content ?>
         <?php $this->endBody() ?>
+        <?= Setting::get('counters') ?>
     </body>
 </html>
 <?php $this->endPage() ?>

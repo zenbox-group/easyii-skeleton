@@ -135,6 +135,13 @@ class InstallController extends \yii\web\Controller
         ]))->save();
 
         (new Setting([
+            'name' => 'counters',
+            'title' => Yii::t('app/install', 'Counters'),
+            'value' => '',
+            'visibility' => Setting::VISIBLE_ROOT
+        ]))->save();
+
+        (new Setting([
             'name' => 'twitter_url',
             'title' => 'Twitter',
             'value' => 'https://twitter.com/',

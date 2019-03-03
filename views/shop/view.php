@@ -1,5 +1,5 @@
 <?php
-use App\models\AddToCartForm;
+use App\Models\AddToCartForm;
 use yii\easyii\modules\catalog\api\Catalog;
 use yii\helpers\Html;
 use yii\helpers\Url;

@@ -1,12 +1,21 @@
-ZenBox Easyii
-=============
+# ZenBox Easyii
+
+[![PHP Version](https://img.shields.io/packagist/php-v/zenbox/easyii-skeleton.svg?style=for-the-badge)](https://packagist.org/packages/zenbox/easyii-skeleton)
+[![Stable Version](https://img.shields.io/packagist/v/zenbox/easyii-skeleton.svg?style=for-the-badge&label=Latest)](https://packagist.org/packages/zenbox/easyii-skeleton)
+[![Total Downloads](https://img.shields.io/packagist/dt/zenbox/easyii-skeleton.svg?style=for-the-badge&label=Total+downloads)](https://packagist.org/packages/zenbox/easyii-skeleton)
+
 Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 
-Requirements
-------------
-The main requirement is PHP >= 7.1. Other requirements you can see after download.
+## Installation
 
-Direcotry Structure
+Using Composer:
+
+```sh
+$ composer create-project zenbox/easyii-skeleton <project dir>
+```
+
+## Directory Structure
+
 ```
 config/             contains application configurations
 data/               contains files generated during runtime
@@ -17,6 +26,7 @@ src/                main application folder
     Assets/         contains assets definition
     Commands/       contains Console controller classes
     Controllers/    contains Web controller classes
+    Models/         contains Model classes
 vendor/             contains dependent 3rd-party packages
 views/              contains application configurations
 ```
