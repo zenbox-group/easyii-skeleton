@@ -1,0 +1,9 @@
+html, body{
+    height: 100%;
+}
+main {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 56px auto;
+}

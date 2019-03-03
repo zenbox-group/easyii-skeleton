@@ -1,0 +1,56 @@
+{
+    "name": "zenbox/easyii-skeleton",
+    "description": "ZenBox EasyiiCMS simple shop with examples of all modules",
+    "keywords": ["yii2", "cms", "control panel", "admin", "easy", "shop"],
+    "type": "project",
+    "homepage": "https://github.com/zenbox-group/easyii-skeleton",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "noumo/easyii": "dev-master",
+        "fzaninotto/faker": "^1.8",
+        "rmrevin/yii2-fontawesome": "~2.17",
+        "symfony/dotenv": "^4.1",
+        "bower-asset/fancybox": "^2.1.7",
+        "bower-asset/jquery": "^2.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "generateCookieValidationKey": [
+                "/config/web.php"
+            ]
+        },
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        },
+	    "writable": [
+            "public/assets",
+            "public/uploads",
+            "data"
+        ]
+    }
+}
